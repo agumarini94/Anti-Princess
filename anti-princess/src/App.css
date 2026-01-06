@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* CONTENEDOR DE LA LISTA: Centra los botones y los separa */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  /* Espacio entre cada rectángulo */
+  margin: 30px auto;
+  width: 100%;
+  max-width: 500px;
+  /* Todos medirán lo mismo (ancho) */
+}
+
+/* CADA BOTÓN (RECTÁNGULO): Mismo tamaño y misma letra */
+.menu-button {
+  width: 100%;
+  /* Ocupa todo el ancho del contenedor */
+  height: 65px;
+  /* Altura fija para todos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Estética */
+  background-color: rgba(128, 128, 128, 0.1);
+  border: 2px solid currentColor;
+  /* Usa el color de letra que elijas en el input */
+  border-radius: 12px;
+  /* Bordes redondeados modernos */
+  color: inherit;
+  /* Sigue el color de letra de tu menú de arriba */
+  font-family: inherit;
+  /* Misma letra de la app */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /* Animación */
+  transition: all 0.3s ease;
+}
+
+/* EFECTO CUANDO PASAS EL MOUSE */
+.menu-button:hover {
+  transform: scale(1.03);
+  /* Se agranda un poquito */
+  background-color: rgba(128, 128, 128, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra para profundidad */
+  filter: brightness(1.2);
+  /* Brilla un poco más */
+}
+
+/* Estilos extra que ya tenías */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
